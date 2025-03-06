@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+
+/* Contact Form Styles */
+#message_me {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+.main_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+
+p{
+text-align: justify;
+}
+
+.nav{
+margin-top: -20px;
+width: 97vw;
+position: fixed;
+z-index: 999;
+}
+
+.logo_image{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.div-1,div-2,div-3{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.innerImage{
+    background-size: cover;
+
+}
+
+.main_div{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.innerImage:hover {
+    transform: scaleY(2);  /* If you actually want to stretch it vertically */
+    transition: transform 2s ease-in-out 0.25s;
+}
+
+
+/* General Section Styling */
+#education {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Vertical Line */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: #007bff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Timeline Items */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  /* Left Side */
+  .timeline-item.left {
+    left: 0;
+    text-align: left;
+    animation-delay: 0.2s;
+  }
+  
+  /* Right Side */
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+    animation-delay: 0.4s;
+  }
+  
+  /* Content Box */
+  .content {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+  }
+  
+  /* Image Styling */
+  .content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-left: 50px;
+      text-align: left;
+    }
+    
+    .timeline-item.right {
+      left: 0;
+    }
+  }
+  
